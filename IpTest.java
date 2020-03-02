@@ -4,6 +4,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
+ * ip地址是用于区分电脑的
  * InetAddress:多个静态方法
  * 1.getLocalHost:本机
  * 2.getByName:根据域名DNS | ip地址-->IP
