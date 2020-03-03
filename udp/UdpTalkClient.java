@@ -8,12 +8,8 @@ import java.net.InetSocketAddress;
 import java.net.SocketException;
 
 /**
- * 发送端 1.使用DatagramSocket 指定端口 创建发送端 
- * 2.准备数据 一定转成字节数组
- * 3.封装成DatagramPacket包裹，需要指定目的地 
- * 4.发送包裹 send(DatagramPacket p) 
- * 5.释放资源
- * 
+ * 发送端
+ * 1.0实现不断发数据，但是不能接受回应
  * @author Mike-laptop
  *
  */
@@ -26,9 +22,6 @@ public class UdpTalkClient {
 		// 2.准备数据 一定转成字节数组
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
-			
-			
-		
 		String dataString = reader.readLine();
 		byte[] datas = dataString.getBytes();
 		// 3.封装成DatagramPacket包裹，需要指定目的地
