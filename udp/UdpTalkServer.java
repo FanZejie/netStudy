@@ -7,13 +7,7 @@ import java.net.SocketException;
 
 /**
  * 接收端
- * 1.使用DatagramSocket 指定端口 创建接收端
- * 2.准备容器 封装成DatagramPacket 包裹
- * 3.阻塞式接收包裹receive(DatagramPacket p)
- * 4.分析数据
- *     byte[] getData()
- *            getLength()
- * 5.释放资源
+ * 1.0只能接收数据
  * @author Mike-laptop
  *
  */
